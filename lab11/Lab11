@@ -1,0 +1,62 @@
+1) How the program is structured into one class and several methods. 
+
+Ans1) The class in this program is CheckPrimeConc. Along with the class there are several methods used inside the class such as:
+a) public void run - in this class run method is invoked to when the 		             thread is started.	
+b)public static void displayOutcome - In this class, the program checks 				      the number if it is prime or not and 					      displays it.
+c) public static void main - This is the main method, where all of the action 				     is intiated.
+
+2) How threads are created and started?
+
+Ans 2) to create a thread you create a new instance of checkPrimeConc for however many threads you want like CheckPrimeConc t1=new CheckPrimeConc(0,num, 2, maxD);. Then you start the threads and then try to join them to make data more sufficient for the user.
+
+3) How the main() method waits for both threads to stop functioning?
+
+Ans3) The join method is used to wait for the program to stop functioning. yes, its called deadlock. So, if t1 never ends then t2 will never start.
+
+4) The use of variable names, especially the use of the same name in different contexts (e.g. num). In this program, the variable num is used in many different methods, as well as in the class itself. How is this achieved? For what other variables is a similar process used?
+
+Ans 4) num is declared in the class with the line "this.num-num;" which makes it available to use in other methods as well with the same results. Just like num, initDivisor and finalDivisor are also used in the process.
+
+Play with the Code:
+
+1) Locate the two constructors. Remove the first one, which is empty. Now compile the program. Does the program compile? In case you have forgotten, a constructors form is as follows.
+
+Ans 1)- The two constructor in the program is CheckPrimeConc. The program compiles after removing the first constructor. 
+
+2) How many threads does this program create?
+
+ans 2) This program creates two threads.
+
+3) Is there any difference in the code executed by each thread created? With each thread created, is there different code run, is the code run differently? What changes from thread to thread?
+
+ans3) Change in thread would be the different divisibility between initDivisor and finalDivisor.
+
+4) Modify the program so it prints the total elapsed time to check if the given number is a prime. Compile and run the modified program. Then compare the time taken by the multithreaded program against the single threaded program that you have played with in the past. Use the following numbers in your experiment:
+
+ 
+           Single                             Multi
+104729:      52                                 
+
+611953:      67                                
+
+595453013:   4407                               
+
+3300451039:  24407                                
+ 
+9990454997:  73964                               
+
+ 
+
+5) Are the two threads independent? Is there any chance of a deadlock? Dead lock occurs when threads are waiting on the others to finish, since each thread is waiting they have reached a dead lock which they cannot exit.
+
+ans 5) yes two threads are independent. deadlock will not exist because of the way both threads are setup.
+
+ 
+
+
+
+
+
+
+
+

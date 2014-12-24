@@ -1,0 +1,46 @@
+1. List all classes used explicitly methods in this program.
+	CheckPrimality
+	system
+	Scanner
+
+2. List all methods defined as well as used in this program.
+	isItPrime(long num)
+	main
+	nextlong
+	nextline
+
+3. For each method, list its return type.
+	isItprime - void
+	main - void
+	Nextlong - long
+	nextline - 
+
+4. What is the purpose of the Scanner class?
+	Scanner class allows the user to read values of various types.
+
+
+5. What does the println() method do?
+	println() is method in system.out, which prints out the parameters on the screen.
+
+6. Can you locate the constructor for CheckPrimality?
+	Default constructor
+
+7. List all the primitive types used in this program.
+	Boolean
+	Strings
+	long
+
+8. After having browsed the program, can you explain the method used here to check for primality?
+	a. Make a long parameter
+	b. if the number is 1, then it is not a prime by definition. But if 		   the number is 2 it is a prime number.
+	c. if the number is neither 1 nor 2, it will use long divisor = 	   num/2 to serve as a divisor for num.
+	d. if then number multiplied by i is zero, hence it is not a prime 	   number, but if it is not a zero then it would be classified as 		   prime number.
+
+9. What differences and similarities do you notice in the naming of classes, methods, and variables? 
+
+one of the similarities between classes, methods, and variables is that it has to be stated. Another similarity between classes and methods is that they have to be in parenthesses unlike variables. Also, a private variable or method may only be accessed by the class.
+
+10. What happens when you type a non-number?
+	Input not a number or too large, try again.
+	
+

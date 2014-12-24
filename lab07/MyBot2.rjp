@@ -1,0 +1,9 @@
+Cookie=hbp
+Version=1
+MainClass=Mybot2
+StackSize=200
+Autorun=false
+BuildBeforeLoad=true
+OpenFile=Mybot2.java
+OpenFile=/u/u96/patel184/CS180/lab05/Sonar.java
+OpenFile=/u/u96/patel184/CS180/lab06/MyBot.java
